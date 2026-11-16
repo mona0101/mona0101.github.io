@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#FDFBF7">
 <meta name="description" content="Muna Dini, data scientist. Hackathon winner, AI projects and experience.">
-<title>Muna Dini — Data Scientist</title>
+<title>Muna Dini | Data Scientist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,20 +40,32 @@
   .lang:hover{border-color:var(--ink)}
 
   /* hero */
-  .hero{text-align:start;padding:clamp(70px,14vh,140px) 0 50px;max-width:900px}
+  .hero{text-align:center;padding:clamp(70px,14vh,140px) 0 50px;max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
   .sig{font-weight:500;font-size:clamp(16px,1.6vw,18px);color:var(--muted);margin-bottom:18px}
-  [dir=rtl] .hero h1{line-height:1.9;font-size:clamp(30px,4.4vw,54px)}
+  [dir=rtl] .hero h1{line-height:1.5;font-size:clamp(52px,8vw,96px);font-weight:700}
   .hname,[dir=rtl] .hname{margin:0;font-family:var(--text);font-weight:600;font-size:18px;line-height:1.4;letter-spacing:0;color:var(--ink)}
   .who span{display:block}
   [dir=ltr] .hname{font-family:var(--display);font-weight:500;font-size:20px;line-height:1.3}
-  .cred{display:flex;align-items:center;gap:14px;margin-top:34px;padding-inline-start:0}
+  .cred{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px}
   .cred .who{padding-inline-start:2px}
   .cred img{height:56px;width:auto}
-  .cred span{font-weight:500;font-size:15px;color:#114C66}
+  .cred span{font-weight:500;font-size:clamp(16px,1.8vw,19px);color:#114C66}
   .btn.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
   .btn.line{border-color:var(--ink);color:var(--ink)}
   .btn.line:hover{background:var(--ink);color:#fff}
-  .hero h1{font-size:clamp(34px,5vw,60px);line-height:1.15;letter-spacing:-.02em;font-weight:400}
+  .hero h1{font-size:clamp(48px,8vw,96px);line-height:1.05;letter-spacing:-.025em;font-weight:500;color:var(--ink)}
+  .hlogo{width:clamp(54px,5vw,64px);height:auto}
+  .deg{display:flex;align-items:center;gap:14px;margin-top:20px;font-weight:500;font-size:clamp(15px,1.6vw,17px);color:#114C66}
+  .deg span:not(.ln){font-family:var(--display);font-weight:400;font-size:clamp(20px,2.2vw,24px);color:#2B2930}
+  [dir=rtl] .deg span:not(.ln){font-family:"Aref Ruqaa",serif;font-size:clamp(22px,2.4vw,26px);line-height:1.6}
+  .deg .ln{width:28px;height:1px;background:#CFCAD3}
+  .hero .name{margin-top:0}
+  .hero .hlogo{margin-top:34px}
+  .in{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d)}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1;transform:none}}
+  .quote{margin:34px auto 0;max-width:34ch;font-family:var(--display);font-size:clamp(20px,2.3vw,27px);line-height:1.45;color:var(--muted)}
+  [dir=rtl] .quote{font-family:"Aref Ruqaa",serif;font-weight:400;line-height:1.95;max-width:30ch}
   .role{font-family:var(--display);font-weight:400;font-size:clamp(20px,2.6vw,28px);color:var(--muted);margin-top:10px;letter-spacing:-.01em}
   [dir=rtl] .role{font-family:"Aref Ruqaa",serif;letter-spacing:0}
   .uni{display:inline-flex;align-items:center;gap:18px;margin:40px 0 0;padding:14px 26px 14px 18px;background:var(--card);border:1px solid var(--line);border-radius:22px;text-align:start}
@@ -78,6 +90,13 @@
   .node{width:56px;height:56px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--bg);border:2px solid var(--ink);position:relative;z-index:1}
   .node svg{width:24px;height:24px}
   .chead h2{font-size:clamp(34px,5vw,58px)}
+  .edu{padding-bottom:40px}
+  .node.uj{width:72px;height:72px;margin-inline-start:-8px;background:var(--bg);border:0;border-radius:0;overflow:visible}
+  .node.uj img{width:52px;height:auto}
+  .edu-t b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(21px,2.3vw,25px);line-height:1.35;color:#2B2930}
+  [dir=rtl] .edu-t b{font-family:"Aref Ruqaa",serif;font-weight:400;font-size:clamp(22px,2.4vw,26px);line-height:1.8}
+  .edu-t span{display:block;color:var(--muted);font-size:15px;margin-top:2px}
+
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:26px;overflow:hidden;transition:box-shadow .25s ease}
   .card:hover{box-shadow:0 24px 50px -26px rgba(18,17,23,.3)}
@@ -167,7 +186,19 @@
   .end{margin:110px 0 0;padding:0}
   .end .chead{margin-inline-start:0;margin-bottom:24px}
   .end .chead h2{font-size:clamp(28px,4vw,44px)}
-  .end .cta{display:flex;gap:10px;flex-wrap:wrap;padding-inline-start:76px}
+  .mail{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-inline-start:76px;margin-bottom:22px}
+  .mail-addr{display:inline-flex;align-items:center;gap:10px;font-size:17px;font-weight:500;color:var(--ink);text-decoration:none}
+  .mail-addr svg{width:20px;height:20px;flex:none}
+  .mail-addr:hover span{color:var(--muted)}
+  .links-row{display:flex;flex-wrap:wrap;gap:14px 32px;padding-inline-start:76px;margin-bottom:26px}
+  .clink{display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:500;color:var(--ink);text-decoration:none}
+  .clink svg{width:20px;height:20px;flex:none}
+  .clink:hover{color:var(--muted)}
+  .end .cta{display:flex;gap:22px;flex-wrap:wrap;align-items:center;padding-inline-start:76px}
+  .social{display:inline-flex;gap:16px;align-items:center}
+  .ico{display:grid;place-items:center;width:40px;height:40px;color:var(--ink);transition:color .2s,transform .2s}
+  .ico svg{width:24px;height:24px}
+  .ico:hover{color:var(--muted);transform:translateY(-2px)}
   .btn{display:inline-flex;text-decoration:none;font-weight:600;font-size:16px;padding:13px 24px;border-radius:14px;border:1px solid var(--ink);color:var(--ink);background:transparent;transition:transform .2s,background .2s,color .2s}
   .btn:hover{transform:translateY(-2px)}
   .btn.solid{background:var(--ink);color:#fff}
@@ -181,6 +212,8 @@
 
   @media (max-width:860px){
     .end .cta{padding-inline-start:0}
+    .mail{padding-inline-start:0}
+    .links-row{padding-inline-start:0;flex-direction:column;gap:14px}
     .nav .logo{display:none}
     .links a{padding:6px 6px;font-size:11.5px}
     .nav{gap:6px}
@@ -202,6 +235,8 @@
     .chead{margin-inline-start:-30px;gap:12px}
     .node{width:38px;height:38px}
     .node svg{width:18px;height:18px}
+    .node.uj{width:52px;height:52px;margin-inline-start:-7px}
+    .node.uj img{width:38px}
     .rail{display:block;inset-inline-start:18px}
     .chead h2{font-size:clamp(30px,8vw,40px)}
     .end .chead{margin-inline-start:0}
@@ -227,13 +262,19 @@
   </nav>
 
   <header class="hero" id="top">
-    <h1 data-en="Data holds untold treasures, waiting to be unlocked by the right questions, revealing insights that guide decision-makers." data-ar="في البيانات كنوزٌ تنتظر مَن يُحسن السؤال، فتستجلي له الحقائق، لتُضيء طريقَ صنّاع القرار.">Data holds untold treasures, waiting to be unlocked by the right questions, revealing insights that guide decision-makers.</h1>
-    <div class="cred"><img src="assets/uj.png" alt="University of Jeddah"><div class="who"><p class="hname" data-en="Muna Dini" data-ar="منى ديني">Muna Dini</p><span data-en="Data Science graduate" data-ar="خرّيجة علم البيانات">Data Science graduate</span></div></div>
+    <h1 class="name in" data-en="Muna Dini" data-ar="منى ديني" style="--d:0s">Muna Dini</h1>
+    <p class="deg in" style="--d:.15s"><span class="ln"></span><span data-en="Data Science" data-ar="علوم البيانات">Data Science</span><span class="ln"></span></p>
+    <p class="quote in" data-en="Data holds untold treasures, waiting to be unlocked by the right questions, revealing insights that guide decision-makers." data-ar="في البيانات كنوزٌ تنتظر مَن يُحسن السؤال، فتستجلي له الحقائق، لتُضيء طريقَ صنّاع القرار." style="--d:.3s">Data holds untold treasures, waiting to be unlocked by the right questions, revealing insights that guide decision-makers.</p>
   </header>
 
 
   <div class="story" id="story">
     <div class="rail"><b id="fill"></b></div>
+
+    <!-- EDUCATION -->
+    <section class="chapter edu" id="edu">
+      <div class="chead"><span class="node uj"><img src="assets/uj.png" alt="University of Jeddah"></span><div class="edu-t"><b data-en="Bachelor of Science in Data Science" data-ar="بكالوريوس علوم البيانات">Bachelor of Science in Data Science</b><span data-en="University of Jeddah, 2022 – 2026" data-ar="جامعة جدة، 2022 – 2026">University of Jeddah, 2022 – 2026</span></div></div>
+    </section>
 
     <!-- ACHIEVEMENTS -->
     <section class="chapter" id="hack">
@@ -269,8 +310,8 @@
             <p data-en="Top 10 of 80 teams at the Athka U hackathon by SDAIA and Microsoft" data-ar="ضمن أفضل عشرة فرق من بين ثمانين في هاكاثون أذكى يو، بتنظيم سدايا ومايكروسوفت">Top 10 of 80 teams at the Athka U hackathon by SDAIA and Microsoft</p>
             <div class="row"><button class="more" type="button" aria-expanded="false"><i>+</i><span data-en="Learn more" data-ar="اعرف المزيد">Learn more</span></button><button class="more team-btn" type="button" aria-expanded="false"><i class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 13.7c3 .1 5.5 2 5.5 5.3"/></svg></i><span data-en="Team" data-ar="الفريق">Team</span></button></div>
             <div class="details"><div>
-              <p data-en="Many parents struggle to deal with their children's speech and language disorders, while access to speech therapists remains limited. To meet this need, we developed Guided Voices, a generative AI system built on Retrieval-Augmented Generation (RAG). It answers parents' questions based on trusted scientific sources and offers children speech exercises that help develop their language skills. The project reached the final round in Riyadh, where it was presented on stage."
-                 data-ar="يواجه كثير من أولياء الأمور صعوبة في التعامل مع اضطرابات النطق واللغة لدى أطفالهم، في ظل محدودية الوصول إلى أخصائيي التخاطب. ولتلبية هذه الحاجة، طوّرنا Guided Voices، وهو نظام ذكاء اصطناعي توليدي يعتمد تقنية التوليد المعزّز بالاسترجاع (RAG)، فيجيب عن استفسارات الوالدين استنادًا إلى مصادر علمية موثوقة، ويقدّم للطفل تمارين تخاطب تُسهم في تنمية مهاراته اللغوية. وقد تأهّل المشروع إلى المرحلة النهائية في الرياض، حيث عُرض على المسرح.">Many parents struggle to deal with their children's speech and language disorders, while access to speech therapists remains limited. To meet this need, we developed Guided Voices, a generative AI system built on Retrieval-Augmented Generation (RAG). It answers parents' questions based on trusted scientific sources and offers children speech exercises that help develop their language skills. The project reached the final round in Riyadh, where it was presented on stage.</p>
+              <p data-en="Many parents struggle to deal with their children's speech and language disorders, while access to speech therapists remains limited. To meet this need, we developed Guided Voices, a generative AI system built on Retrieval-Augmented Generation (RAG). It answers parents' questions based on trusted scientific sources and offers children speech exercises that help develop their language skills."
+                 data-ar="يواجه كثير من أولياء الأمور صعوبة في التعامل مع اضطرابات النطق واللغة لدى أطفالهم، في ظل محدودية الوصول إلى أخصائيي التخاطب. ولتلبية هذه الحاجة، طوّرنا Guided Voices، وهو نظام ذكاء اصطناعي توليدي يعتمد تقنية التوليد المعزّز بالاسترجاع (RAG)، فيجيب عن استفسارات الوالدين استنادًا إلى مصادر علمية موثوقة، ويقدّم للطفل تمارين تخاطب تُسهم في تنمية مهاراته اللغوية.">Many parents struggle to deal with their children's speech and language disorders, while access to speech therapists remains limited. To meet this need, we developed Guided Voices, a generative AI system built on Retrieval-Augmented Generation (RAG). It answers parents' questions based on trusted scientific sources and offers children speech exercises that help develop their language skills.</p>
               <div class="chips"><span data-en="Generative AI" data-ar="ذكاء اصطناعي توليدي">Generative AI</span><span>RAG</span><span>Azure</span></div>
             </div></div>
             <div class="details team"><div><p class="myrole" data-en="I led the app's technical development in React Native and built its AI features, including the chatbot and a voice feature that helps children improve their pronunciation." data-ar="تولّيتُ في المشروع التطوير البرمجي للتطبيق باستخدام React Native، وبنيتُ خصائص الذكاء الاصطناعي فيه، ومنها المساعد الحواري، وميزة صوتية تُعين الطفل على تحسين نطقه.">I led the app's technical development in React Native and built its AI features, including the chatbot and a voice feature that helps children improve their pronunciation.</p><div class="names"><span class="me" data-en="Muna Dini" data-ar="منى ديني">Muna Dini</span><span class="" data-en="Dana Alzahrani" data-ar="دانة الزهراني">Dana Alzahrani</span><span class="" data-en="Shahad Altarteer" data-ar="شهد الترتير">Shahad Altarteer</span><span class="" data-en="Jana Alzubaidi" data-ar="جنى الزبيدي">Jana Alzubaidi</span></div></div></div>
@@ -284,6 +325,21 @@
       <div class="chead"><span class="node"><svg viewBox="0 0 24 24" fill="none" stroke="#121117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span><h2 data-en="Projects" data-ar="المشاريع">Projects</h2></div>
       <div class="cards">
         <article class="card wide">
+          <div class="stage"><canvas data-scene="clusters" aria-hidden="true"></canvas></div>
+          <div class="info">
+            <h3 data-en="Customer Segmentation" data-ar="تصنيف العملاء">Customer Segmentation</h3>
+            <div class="chips"><span class="hl" data-en="6 customer segments" data-ar="ست فئات من العملاء">6 customer segments</span><span>K-Means</span></div>
+            <div class="row">
+              <button class="more" type="button" aria-expanded="false"><i>+</i><span data-en="Learn more" data-ar="اعرف المزيد">Learn more</span></button>
+              <a class="code" href="https://github.com/mona0101/customer-segmentation" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <div class="details"><div>
+              <p data-en="Retail customers vary in their purchasing behavior, and addressing them all the same way wastes effort and budget. I therefore built a machine learning model that analyzes an online store's customers on four criteria: purchase frequency, total spending, recency of the last purchase, and basket size. It then classifies them into six segments, enabling the store to target each one with what suits it."
+                 data-ar="يتباين عملاء قطاع التجزئة في سلوكهم الشرائي، ومخاطبتهم جميعًا بالأسلوب ذاته تهدر الجهد والميزانية. ولذلك بنيتُ نموذج تعلّم آلة يحلّل سلوك عملاء متجر إلكتروني وفق أربعة معايير: معدّل الشراء، وحجم الإنفاق، وحداثة آخر عملية شراء، وحجم سلة المشتريات، ثم يصنّفهم إلى ست فئات، بما يمكّن المتجر من استهداف كل فئة بما يناسبها.">Retail customers vary in their purchasing behavior, and addressing them all the same way wastes effort and budget. I therefore built a machine learning model that analyzes an online store's customers on four criteria: purchase frequency, total spending, recency of the last purchase, and basket size. It then classifies them into six segments, enabling the store to target each one with what suits it.</p>
+            </div></div>
+          </div>
+        </article>
+        <article class="card">
           <div class="stage"><span class="tag" data-en="Graduation project" data-ar="مشروع التخرّج">Graduation project</span><canvas data-scene="drone" aria-hidden="true"></canvas></div>
           <div class="info">
             <h3 data-en="Drone detection and tracking" data-ar="رصد الطائرات المسيّرة وتتبّعها">Drone detection and tracking</h3>
@@ -299,7 +355,6 @@
             <div class="details team"><div><p class="myrole" data-en="I built the audio detection model and fused the outputs of the different models into a single decision." data-ar="تولّيتُ في المشروع بناء نموذج الرصد الصوتي، ودمج مخرجات النماذج المختلفة للوصول إلى قرار موحّد.">I built the audio detection model and fused the outputs of the different models into a single decision.</p><div class="names"><span class="me" data-en="Muna Dini" data-ar="منى ديني">Muna Dini</span><span class="" data-en="Raghad Dawoud" data-ar="رغد داود">Raghad Dawoud</span><span class="" data-en="Lamar Alghamdi" data-ar="لمار الغامدي">Lamar Alghamdi</span><span class="" data-en="Shaden Alghamdi" data-ar="شادن الغامدي">Shaden Alghamdi</span><span class="" data-en="Layan Hayil" data-ar="ليان هايل">Layan Hayil</span></div></div></div>
           </div>
         </article>
-
         <article class="card">
           <div class="stage mri"><img src="assets/mri.jpg" alt="Brain MRI scan"><i></i></div>
           <div class="info">
@@ -314,22 +369,6 @@
                  data-ar="يُسهم التشخيص المبكر لمرض الزهايمر في إبطاء تطوّره، غير أن قراءة آلاف صور الرنين المغناطيسي تستهلك كثيرًا من وقت الأطباء. ولذلك طوّرنا نموذج تعلّم عميق يصنّف شرائح الرنين المغناطيسي للدماغ إلى أربع مراحل، بعد تدريبه على نحو 80 ألف شريحة تعود إلى 461 مريضًا. ونظرًا لندرة الحالات المتقدّمة في البيانات، عالجنا عدم التوازن بينها لضمان رصد النموذج لهذه الحالات بدقة.">Early diagnosis of Alzheimer's disease helps slow its progression, yet reading thousands of MRI scans consumes much of doctors' time. We therefore developed a deep learning model that classifies brain MRI slices into four stages, trained on about 80,000 slices from 461 patients. Given how rare advanced cases were in the data, we addressed the class imbalance to ensure the model detects them accurately.</p>
             </div></div>
             <div class="details team"><div><p class="myrole" data-en="I built and compared several CNN models to reach the most accurate one." data-ar="تولّيتُ في المشروع بناء عدّة نماذج من الشبكات العصبية الالتفافية (CNN) والمقارنة بينها، للوصول إلى النموذج الأعلى دقة.">I built and compared several CNN models to reach the most accurate one.</p><div class="names"><span class="me" data-en="Muna Dini" data-ar="منى ديني">Muna Dini</span><span class="" data-en="Raghad Dawoud" data-ar="رغد داود">Raghad Dawoud</span><span class="" data-en="Maha Alsubaie" data-ar="مها السبيعي">Maha Alsubaie</span></div></div></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="stage"><canvas data-scene="clusters" aria-hidden="true"></canvas></div>
-          <div class="info">
-            <h3 data-en="Customer Segmentation" data-ar="تصنيف العملاء">Customer Segmentation</h3>
-            <div class="chips"><span class="hl" data-en="6 customer segments" data-ar="ست فئات من العملاء">6 customer segments</span><span>K-Means</span></div>
-            <div class="row">
-              <button class="more" type="button" aria-expanded="false"><i>+</i><span data-en="Learn more" data-ar="اعرف المزيد">Learn more</span></button>
-              <a class="code" href="https://github.com/mona0101/customer-segmentation" target="_blank" rel="noopener">GitHub</a>
-            </div>
-            <div class="details"><div>
-              <p data-en="Retail customers vary in their purchasing behavior, and addressing them all the same way wastes effort and budget. I therefore built a machine learning model that analyzes an online store's customers on four criteria: purchase frequency, total spending, recency of the last purchase, and basket size. It then classifies them into six segments, enabling the store to target each one with what suits it."
-                 data-ar="يتباين عملاء قطاع التجزئة في سلوكهم الشرائي، ومخاطبتهم جميعًا بالأسلوب ذاته تهدر الجهد والميزانية. ولذلك بنيتُ نموذج تعلّم آلة يحلّل سلوك عملاء متجر إلكتروني وفق أربعة معايير: معدّل الشراء، وحجم الإنفاق، وحداثة آخر عملية شراء، وحجم سلة المشتريات، ثم يصنّفهم إلى ست فئات، بما يمكّن المتجر من استهداف كل فئة بما يناسبها.">Retail customers vary in their purchasing behavior, and addressing them all the same way wastes effort and budget. I therefore built a machine learning model that analyzes an online store's customers on four criteria: purchase frequency, total spending, recency of the last purchase, and basket size. It then classifies them into six segments, enabling the store to target each one with what suits it.</p>
-            </div></div>
           </div>
         </article>
       </div>
@@ -375,11 +414,14 @@
 
 <div class="wrap">
   <section class="end" id="contact">
-    <div class="chead"><span class="node"><svg viewBox="0 0 24 24" fill="none" stroke="#121117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h2 data-en="Contact" data-ar="التواصل">Contact</h2></div>
+    <div class="chead"><span class="node"><svg viewBox="0 0 24 24" fill="none" stroke="#121117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><h2 data-en="Contact" data-ar="التواصل">Contact</h2></div>
+    <div class="links-row">
+      <a class="clink" href="mailto:monadini33@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span dir="ltr">monadini33@gmail.com</span></a>
+      <a class="clink" href="https://www.linkedin.com/in/munadini" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+      <a class="clink" href="https://github.com/mona0101" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg><span>GitHub</span></a>
+    </div>
     <div class="cta">
       <a class="btn solid" href="assets/Muna-Dini-CV.pdf" target="_blank" rel="noopener" data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</a>
-      <a class="btn" href="https://www.linkedin.com/in/munadini" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://github.com/mona0101" target="_blank" rel="noopener">GitHub</a>
     </div>
   </section>
   <footer><p class="fname" data-en="Muna Dini" data-ar="منى ديني">Muna Dini</p><p class="credit" data-en="MRI image: NiiVue demo images (chris_t1)" data-ar="صورة الرنين المغناطيسي: NiiVue demo images (chris_t1)">MRI image: NiiVue demo images (chris_t1)</p></footer>
@@ -394,7 +436,7 @@ function setLang(l){
   document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
   document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[l]});
   langBtn.textContent=l==='ar'?'English':'عربي';
-  document.title=l==='ar'?'منى ديني | عالمة بيانات':'Muna Dini — Data Scientist';
+  document.title=l==='ar'?'منى ديني | عالمة بيانات':'Muna Dini | Data Scientist';
   try{localStorage.setItem('lang',l)}catch(e){}
 }
 let lang='en';
@@ -421,6 +463,7 @@ document.querySelectorAll('.scroller').forEach(sc=>{
     if(!reduce&&!down&&now>hold&&w){pos+=dir*22*dt;if(pos<w*.5)pos+=w;else if(pos>w*1.5)pos-=w;sc.scrollLeft=pos}
     requestAnimationFrame(tick)})(last);
 });
+
 
 document.querySelectorAll('.more').forEach(b=>b.addEventListener('click',()=>{
   const info=b.closest('.info'),isTeam=b.classList.contains('team-btn');
